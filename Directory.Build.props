@@ -1,0 +1,15 @@
+<Project>
+  <Import Project="version.props" />
+  <PropertyGroup>
+    <RepositoryRoot>$(MSbuildThisFileDirectory)</RepositoryRoot>
+    <RepositoryUrl>https://github.com/natemcmaster/nuget-cli</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Nate McMaster</Authors>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Product>NuGet.Cli</Product>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateFullPaths Condition="'$(VSCODE_PID)' != ''">true</GenerateFullPaths>
+    <BaseOutputPath>$(MSbuildThisFileDirectory)artifacts/bin/$(MSbuildProjectName)/</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSbuildThisFileDirectory)artifacts/obj/$(MSbuildProjectName)/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
